@@ -178,7 +178,7 @@
 }
 
 @supports (
-         (text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))) 
+         ( text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))) 
 {
   .image_laibel {
     text-shadow: none;
