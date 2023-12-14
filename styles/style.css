@@ -27,7 +27,7 @@
   align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-weight: var(--font-variation-settings-text);
+  font-variation-settings: "wght" var(--font-variation-settings-text, 400);
 }
 
 .header {
@@ -142,6 +142,7 @@
   padding: 5px 10px;
   font-size: 18px;
   line-height: normal;
+  font-variation-settings: "wght" var(--font-variation-settings-text, 400);
 }
 
 .img_card {
