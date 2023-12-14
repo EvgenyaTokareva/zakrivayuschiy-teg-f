@@ -4,3 +4,433 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --font-family-basic: "PressStart2P", sans-serif;
+  --font-family-accent: "Inter-Variable", sans-serif;
+  --font-variation-settings-text: 465;
+  --font-variation-settings-title: 785;
+  --background-color: #000;
+  --border: 2px solid #00CC14;
+  --accent-color: #00CC14;
+  --background-for-image: repeating-linear-gradient(180deg, #000 0 2px, rgb(244 152 173 / 0) 2px 4px), 
+							repeating-linear-gradient(90deg, #000 0 2px, rgb(244 152 173 / 0) 2px 4px),
+							repeating-linear-gradient(180deg, #007f0c 0.01%, #004306);
+  --laibel-shadow: #00CC14;
+  --opacity-text: 0.6;
+  --main-transition: opacity 0.3s ease;
+--color-animat: #00CC14;
+  --circuit-heart: #00CC14; /*контур*/
+  --filling-heart: #00CC14;  /*тело*/
+  --star-heart: #ff0000; /*звезды*/
+  --core-heart: #00CC14; /*сердцевина*/
+  --filling-heart-activ: #ff0000; /*в активном состоянии*/
+}
+
+.theme-dark .page {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  background-image: var(--background-for-image);
+  font-weight: var(--font-variation-settings-text);
+}
+
+.theme-dark .header {
+  background-color: var(--background-color);
+  border: var(--border);
+  font-weight: var(--font-variation-settings-text);
+}
+
+.theme-dark .theme-menu__button::after {
+  background-color: var(--accent-color);
+}
+
+.theme-dark .theme-menu__button {
+  font-weight: var(--font-variation-settings-text);
+}
+
+.theme-dark .card {
+  background-color: var(--background-color);
+  border: var(--border);
+}
+
+.theme-dark .title_card {
+  font-weight: var(--font-variation-settings-title);
+}
+
+.theme-dark .image_laibel {
+  text-shadow: -1px 0 var(--laibel-shadow), 0 1px var(--laibel-shadow), 1px 0 var(--laibel-shadow), 0 -1px var(--laibel-shadow);
+}
+
+.theme-dark .text_card {
+  font-weight: var(--font-variation-settings-text);
+}
+
+@supports (
+         (text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))) {
+  .theme-dark .image_laibel {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--laibel-shadow);
+		 }}
+
+.theme-dark .card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+}
+
+.theme-dark .card__like-button {
+  border: 2px solid var(--accent-color);
+}
+
+.theme-dark .card__like-button:focus,
+.theme-dark .save_block:focus,
+.theme-dark .dialog__button:focus {
+  box-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.theme-dark .card__like-button::after,
+.theme-dark .save_block::after,
+.theme-dark .dialog__button::after {
+  color: #fff;
+  background-color: var(--color-animat);
+}
+
+.theme-dark .button__text {
+  font-weight: var(--font-variation-settings-text);
+}
+
+.theme-dark .save_block {
+  background-color: var(--background-color);
+  border: var(--border);
+}
+
+.theme-dark dialog {
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
+}
+
+.theme-dark .dialog__button {
+  border: 2px solid var(--accent-color);
+}
+
+:root.theme-light {
+  --font-family-basic: "PressStart2P", sans-serif;
+  --font-family-accent: "Inter-Variable", sans-serif;
+  --font-variation-settings-text: 400;
+  --font-variation-settings-title: 700;
+  --background-color: #fff;
+  --border: 2px solid #000;
+  --accent-color: #000;
+  --background-for-image: repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(244 152 173 / 0) 2px 4px), 
+                          repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(244 152 173 / 0) 2px 4px),
+                          repeating-linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
+  --laibel-shadow: #fff;
+  --opacity-text: 0.6;
+  --main-transition: opacity 0.3s ease;
+  --color-animat: #fff;
+  --circuit-heart: #000; /*контур*/
+  --filling-heart: #ff0000;  /*тело*/
+  --star-heart: #ff0000; /*звезды*/
+  --core-heart: #ff0000; /*сердцевина*/
+  --filling-heart-activ: #000; /*в активном состоянии*/
+  }
+  
+  
+  
+.theme-light .page {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  background-image: var(--background-for-image);
+  font-weight: var(--font-variation-settings-text);
+}
+
+.theme-light .header {
+  background-color: var(--background-color);
+  border: var(--border);
+  font-weight: var(--font-variation-settings-text);
+}
+
+.theme-light .theme-menu__button::after {
+  background-color: var(--accent-color);
+}
+
+.theme-light .theme-menu__button {
+  font-weight: var(--font-variation-settings-text);
+}
+
+.theme-light .card {
+  background-color: var(--background-color);
+  border: var(--border);
+}
+
+.theme-light .title_card {
+  font-weight: var(--font-variation-settings-title);
+}
+
+.theme-light .image_laibel {
+  text-shadow: -1px 0 var(--laibel-shadow), 0 1px var(--laibel-shadow), 1px 0 var(--laibel-shadow), 0 -1px var(--laibel-shadow);
+}
+
+.theme-light .text_card {
+  font-weight: var(--font-variation-settings-text);
+}
+
+@supports (
+         (text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))) {
+  .image_laibel {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--laibel-shadow);
+		 }}
+
+.theme-light .card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+}
+
+.theme-light .card__like-button {
+  border: 2px solid var(--accent-color);
+}
+
+.theme-light .card__like-button:focus,
+.theme-light .save_block:focus,
+.theme-light .dialog__button:focus {
+  box-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.theme-light .card__like-button::after,
+.theme-light .save_block::after,
+.theme-light .dialog__button::after {
+  color: #fff;
+  background-color: var(--color-animat);
+}
+
+.theme-light .button__text {
+  font-weight: var(--font-variation-settings-text);
+}
+
+.theme-light .save_block {
+  background-color: var(--background-color);
+  border: var(--border);
+}
+
+.theme-light dialog {
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
+}
+
+.theme-light .dialog__button {
+  border: 2px solid var(--accent-color);
+}
+
+
+
+
+@media (prefers-color-scheme: light) {
+ @supports (
+         (text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))) {
+  .image_laibel {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--laibel-shadow);
+		 }}
+
+  :root {
+    --main-wght: 400;
+    --h-wght: 700;
+    --bg-color: #fff;
+    --accent-color: #000;
+    --bg-img: repeating-linear-gradient(
+        -90deg,
+        #d3d3d3 0 2px,
+        rgb(211 211 211 / 0) 2px 4px
+      ),
+      repeating-linear-gradient(#d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+      linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
+    --lbl-shadow: #fff;
+    --btn-pseudo-text: #fff;
+    --like-contour: #000;
+  }
+
+.page {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  background-image: var(--background-for-image);
+  font-weight: var(--font-variation-settings-text);
+}
+
+.header {
+  background-color: var(--background-color);
+  border: var(--border);
+  font-weight: var(--font-variation-settings-text);
+}
+
+.theme-menu__button::after {
+  background-color: var(--accent-color);
+}
+
+.theme-menu__button {
+  font-weight: var(--font-variation-settings-text);
+}
+
+.card {
+  background-color: var(--background-color);
+  border: var(--border);
+}
+
+.title_card {
+  font-weight: var(--font-variation-settings-title);
+}
+
+.image_laibel {
+  text-shadow: -1px 0 var(--laibel-shadow), 0 1px var(--laibel-shadow), 1px 0 var(--laibel-shadow), 0 -1px var(--laibel-shadow);
+}
+
+.text_card {
+  font-weight: var(--font-variation-settings-text);
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+}
+
+.card__like-button {
+  border: 2px solid var(--accent-color);
+}
+
+.card__like-button:focus,
+.save_block:focus,
+.dialog__button:focus {
+  box-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.card__like-button::after,
+.save_block::after,
+.dialog__button::after {
+  color: #fff;
+  background-color: var(--color-animat);
+}
+
+.button__text {
+  font-weight: var(--font-variation-settings-text);
+}
+
+.save_block {
+  background-color: var(--background-color);
+  border: var(--border);
+}
+
+dialog {
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
+}
+
+.dialog__button {
+  border: 2px solid var(--accent-color);
+}
+
+}
+
+@media (prefers-color-scheme: dark) {
+ @supports (
+         (text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))) {
+  .image_laibel {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--laibel-shadow);
+		 }}
+
+  :root {
+    --font-family-basic: "PressStart2P", sans-serif;
+  --font-family-accent: "Inter-Variable", sans-serif;
+  --font-variation-settings-text: 465;
+  --font-variation-settings-title: 785;
+  --background-color: #000;
+  --border: 2px solid #00CC14;
+  --accent-color: #00CC14;
+  --background-for-image: repeating-linear-gradient(180deg, #000 0 2px, rgb(244 152 173 / 0) 2px 4px), 
+							repeating-linear-gradient(90deg, #000 0 2px, rgb(244 152 173 / 0) 2px 4px),
+							repeating-linear-gradient(180deg, #007f0c 0.01%, #004306);
+  --laibel-shadow: #00CC14;
+  --opacity-text: 0.6;
+  --main-transition: opacity 0.3s ease;
+--color-animat: #00CC14;
+  --circuit-heart: #00CC14; /*контур*/
+  --filling-heart: #00CC14;  /*тело*/
+  --star-heart: #ff0000; /*звезды*/
+  --core-heart: #00CC14; /*сердцевина*/
+  --filling-heart-activ: #ff0000; /*в активном состоянии*/
+  }
+
+.page {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  background-image: var(--background-for-image);
+  font-weight: var(--font-variation-settings-text);
+}
+
+.header {
+  background-color: var(--background-color);
+  border: var(--border);
+  font-weight: var(--font-variation-settings-text);
+}
+
+.theme-menu__button::after {
+  background-color: var(--accent-color);
+}
+
+.theme-menu__button {
+  font-weight: var(--font-variation-settings-text);
+}
+
+.card {
+  background-color: var(--background-color);
+  border: var(--border);
+}
+
+.title_card {
+  font-weight: var(--font-variation-settings-title);
+}
+
+.image_laibel {
+  text-shadow: -1px 0 var(--laibel-shadow), 0 1px var(--laibel-shadow), 1px 0 var(--laibel-shadow), 0 -1px var(--laibel-shadow);
+}
+
+.text_card {
+  font-weight: var(--font-variation-settings-text);
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+}
+
+.card__like-button {
+  border: 2px solid var(--accent-color);
+}
+
+.card__like-button:focus,
+.save_block:focus,
+.dialog__button:focus {
+  box-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.card__like-button::after,
+.save_block::after,
+.dialog__button::after {
+  color: #fff;
+  background-color: var(--color-animat);
+}
+
+.button__text {
+  font-weight: var(--font-variation-settings-text);
+}
+
+.save_block {
+  background-color: var(--background-color);
+  border: var(--border);
+}
+
+dialog {
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
+}
+
+.dialog__button {
+  border: 2px solid var(--accent-color);
+}
+
+}
