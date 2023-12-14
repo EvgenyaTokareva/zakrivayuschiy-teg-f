@@ -70,7 +70,8 @@
   .theme-dark .image_laibel {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--laibel-shadow);
-		 }}
+		 }
+}
 
 .theme-dark .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color);
@@ -178,7 +179,8 @@
   .image_laibel {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--laibel-shadow);
-		 }}
+		 }
+}
 
 .theme-light .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color);
@@ -228,7 +230,8 @@
   .image_laibel {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--laibel-shadow);
-		 }}
+		 }
+ }
 
   :root {
     --main-wght: 400;
@@ -332,7 +335,8 @@ dialog {
   .image_laibel {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--laibel-shadow);
-		 }}
+		 }
+ }
 
   :root {
     --font-family-basic: "PressStart2P", sans-serif;
