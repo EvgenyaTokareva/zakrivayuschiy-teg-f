@@ -104,7 +104,6 @@
   left: 0;
   transform: scaleX(0);
   transform-origin: left;
-  transform-origin: left;
   block-size: 2px;
   inline-size: 100%;
 }
@@ -179,11 +178,13 @@
 }
 
 @supports (
-         (text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))) {
+         (text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))) 
+{
   .image_laibel {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--laibel-shadow);
-		 }}
+		 }
+}
 
 .description {
   display: flex;
@@ -240,7 +241,6 @@ margin: 0;
 
 .card__like-button {
   margin: 0;
-  padding: 0;
   background-color: transparent;
   block-size: 39px;
   border: 2px solid var(--accent-color);
