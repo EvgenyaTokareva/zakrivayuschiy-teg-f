@@ -19,7 +19,7 @@
   --laibel-shadow: #00CC14;
   --opacity-text: 0.6;
   --main-transition: opacity 0.3s ease;
---color-animat: #00CC14;
+  --color-animat: #00CC14;
   --circuit-heart: #00CC14; /*контур*/
   --filling-heart: #00CC14;  /*тело*/
   --star-heart: #ff0000; /*звезды*/
@@ -110,7 +110,6 @@
   border: 2px solid var(--accent-color);
 }
 
-
 :root.theme-light {
   --font-family-basic: "PressStart2P", sans-serif;
   --font-family-accent: "Inter-Variable", sans-serif;
@@ -130,8 +129,6 @@
   --core-heart: #ff0000; /*сердцевина*/
   --filling-heart-activ: #000; /*в активном состоянии*/
   }
-  
-  
   
 .theme-light .page {
   color: var(--accent-color);
@@ -171,7 +168,8 @@
 }
 
 @supports (
-         ( text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))) 
+         (text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))
+          ) 
 {
   .theme-light .image_laibel {
     -webkit-text-stroke: 1px var(--laibel-shadow);
@@ -216,19 +214,6 @@
   border: 2px solid var(--accent-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (prefers-color-scheme: light) {
  @supports (
          (text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))) {
@@ -239,7 +224,7 @@
  }
 
   :root {
-    --font-family-basic: "PressStart2P", sans-serif;
+  --font-family-basic: "PressStart2P", sans-serif;
   --font-family-accent: "Inter-Variable", sans-serif;
   --font-variation-settings-text: 400;
   --font-variation-settings-title: 700;
@@ -340,8 +325,6 @@
 .dialog__button {
   border: 2px solid var(--accent-color);
 }
-
-
 }
 
 @media (prefers-color-scheme: dark) {
