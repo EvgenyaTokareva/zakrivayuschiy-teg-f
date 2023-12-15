@@ -320,7 +320,7 @@
   
 }
 
-.dialog_form .floppy_img {
+.dialog_form.floppy_img {
   margin: 43.5px 20px 42px 31.5px;
 }
 
@@ -436,7 +436,7 @@ dialog::backdrop {
   flex-direction: column;
 }
 
-.dialog_form .floppy_img {
+.dialog_form.floppy_img {
   margin: 44px 20px 42px 42px;
 }
 	
