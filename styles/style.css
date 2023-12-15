@@ -71,7 +71,6 @@
 .theme-menu__button,
 .card__like-button,
 .save_block,
-.dialog__button,
 .card__icon-button,
 .dialog__button {
   cursor: pointer;
@@ -177,7 +176,7 @@
 
 @supports (
          ( text-stroke: 1px var(--laibel-shadow)) or (-webkit-text-stroke: 1px var(--laibel-shadow))
-		 ) 
+          ) 
 {
   .image_laibel {
     text-shadow: none;
