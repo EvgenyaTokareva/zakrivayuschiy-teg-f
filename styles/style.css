@@ -297,6 +297,11 @@
   aspect-ratio: 1 / 1;
 }
 
+.save_block .floppy_img {
+  width: 21px;
+  height: 21px;
+}
+
 .dialog_form .floppy_img {
   margin: 43.5px 20px 42px 31.5px;
 }
@@ -435,6 +440,11 @@ dialog::backdrop {
   flex-direction: column;
 }
 
+.save_block .floppy_img {
+  width: 28px;
+  height: 28px;
+}
+	
 .dialog_form .floppy_img {
   margin: 44px 20px 42px 42px;
 }
